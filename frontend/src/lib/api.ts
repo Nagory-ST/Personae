@@ -184,7 +184,19 @@ const ROUTES: Route[] = [
             : 'Adresse ou mot de passe incorrect.',
         )
       }
-      return rpc('api_session')
+      // Authentifié auprès de Supabase ne suffit pas : il faut un profil
+      // Personae actif. Un compte Auth créé hors du jeu (dashboard,
+      // inscription) n'en a pas — on le déconnecte et on le DIT, au lieu de
+      // laisser croire à une connexion réussie qui n'ouvre rien.
+      const utilisateur = await rpc('api_session')
+      if (utilisateur === null) {
+        await supabase.auth.signOut()
+        throw new ErreurApi(
+          403,
+          "Ce compte existe mais n'a pas de profil Personae : il ne peut pas se connecter à la démonstration.",
+        )
+      }
+      return utilisateur
     },
   },
   {
