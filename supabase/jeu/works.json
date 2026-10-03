@@ -1,0 +1,460 @@
+{
+  "_note": "Œuvres réelles. Les métadonnées FACTUELLES (titre, année, durée, distribution) ne sont pas protégeables. Les SYNOPSIS sont rédigés pour Personae (RG-27) — aucun n'est copié d'une source. Aucune image : les jaquettes sont dessinées en SVG (D-19 révisée).",
+  "_note_precision": "`date_precision` vaut 'day' quand la date exacte est connue, 'year' quand seule l'année l'est (fréquent pour les livres anciens). L'affichage s'y conforme : on ne fabrique pas une précision qu'on n'a pas.",
+
+  "works": [
+    {
+      "slug": "la-la-land", "type": "film", "title": "La La Land",
+      "release_date": "2016-11-11", "date_precision": "day", "original_language": "en",
+      "runtime_minutes": 128, "source": "tmdb",
+      "genres": ["comedie-musicale", "romance", "drame"],
+      "synopsis": "Une actrice qui enchaîne les auditions ratées et un pianiste qui refuse tout compromis se rencontrent dans un Los Angeles rêvé. Le film pose une question simple et cruelle : que sacrifie-t-on à sa carrière, et l'aurait-on sacrifié autrement ?",
+      "credits": [
+        { "person": "damien-chazelle", "role": "realisateur", "order": 0 },
+        { "person": "ryan-gosling", "role": "acteur", "character": "Sebastian", "order": 1 },
+        { "person": "emma-stone", "role": "acteur", "character": "Mia", "order": 2 }
+      ]
+    },
+    {
+      "slug": "whiplash", "type": "film", "title": "Whiplash",
+      "release_date": "2014-10-10", "date_precision": "day", "original_language": "en",
+      "runtime_minutes": 106, "source": "tmdb",
+      "genres": ["drame"],
+      "synopsis": "Un jeune batteur intègre l'orchestre d'un conservatoire prestigieux et tombe sur un professeur qui confond exigence et destruction. Le film ne tranche jamais vraiment sur ce que vaut le résultat.",
+      "credits": [
+        { "person": "damien-chazelle", "role": "realisateur", "order": 0 },
+        { "person": "miles-teller", "role": "acteur", "character": "Andrew Neiman", "order": 1 },
+        { "person": "jk-simmons", "role": "acteur", "character": "Terence Fletcher", "order": 2 }
+      ]
+    },
+    {
+      "slug": "blade-runner", "type": "film", "title": "Blade Runner",
+      "release_date": "1982-06-25", "date_precision": "day", "original_language": "en",
+      "runtime_minutes": 117, "source": "tmdb",
+      "genres": ["science-fiction", "thriller"],
+      "synopsis": "Dans un Los Angeles noyé de pluie et de néons, un policier traque des androïdes indiscernables des humains. Plus il les approche, moins la frontière qu'il est censé faire respecter tient debout.",
+      "credits": [
+        { "person": "ridley-scott", "role": "realisateur", "order": 0 },
+        { "person": "harrison-ford", "role": "acteur", "character": "Rick Deckard", "order": 1 },
+        { "person": "rutger-hauer", "role": "acteur", "character": "Roy Batty", "order": 2 }
+      ]
+    },
+    {
+      "slug": "blade-runner-2049", "type": "film", "title": "Blade Runner 2049",
+      "release_date": "2017-10-04", "date_precision": "day", "original_language": "en",
+      "runtime_minutes": 164, "source": "tmdb",
+      "genres": ["science-fiction", "drame", "thriller"],
+      "synopsis": "Trente ans après, un nouveau blade runner découvre un secret que sa hiérarchie préférerait enterrer. Une suite qui prend le temps de laisser respirer ses plans plutôt que d'expliquer son prédécesseur.",
+      "credits": [
+        { "person": "denis-villeneuve", "role": "realisateur", "order": 0 },
+        { "person": "ryan-gosling", "role": "acteur", "character": "K", "order": 1 },
+        { "person": "harrison-ford", "role": "acteur", "character": "Rick Deckard", "order": 2 }
+      ]
+    },
+    {
+      "slug": "dune-2021", "type": "film", "title": "Dune",
+      "release_date": "2021-09-15", "date_precision": "day", "original_language": "en",
+      "runtime_minutes": 155, "source": "tmdb",
+      "genres": ["science-fiction", "aventure", "drame"],
+      "synopsis": "Une famille noble reçoit la charge d'une planète désertique dont on extrait la ressource la plus convoitée de l'univers. Le cadeau est un piège, et tout le monde le sait sauf celui qui en héritera.",
+      "credits": [
+        { "person": "denis-villeneuve", "role": "realisateur", "order": 0 },
+        { "person": "timothee-chalamet", "role": "acteur", "character": "Paul Atréides", "order": 1 },
+        { "person": "rebecca-ferguson", "role": "acteur", "character": "Dame Jessica", "order": 2 },
+        { "person": "javier-bardem", "role": "acteur", "character": "Stilgar", "order": 3 }
+      ]
+    },
+    {
+      "slug": "shining-film", "type": "film", "title": "Shining",
+      "release_date": "1980-05-23", "date_precision": "day", "original_language": "en",
+      "runtime_minutes": 146, "source": "tmdb",
+      "genres": ["horreur", "thriller", "drame"],
+      "synopsis": "Un écrivain sans livre accepte de garder un hôtel de montagne fermé pour l'hiver, avec sa femme et son fils. L'isolement fait le reste — et le film laisse ouverte la question de savoir si l'hôtel y est pour quelque chose.",
+      "credits": [
+        { "person": "stanley-kubrick", "role": "realisateur", "order": 0 },
+        { "person": "jack-nicholson", "role": "acteur", "character": "Jack Torrance", "order": 1 }
+      ]
+    },
+    {
+      "slug": "le-parrain-film", "type": "film", "title": "Le Parrain",
+      "original_title": "The Godfather",
+      "release_date": "1972-03-24", "date_precision": "day", "original_language": "en",
+      "runtime_minutes": 175, "source": "tmdb",
+      "genres": ["drame", "policier"],
+      "synopsis": "Le fils cadet d'une famille mafieuse new-yorkaise, revenu de la guerre avec l'intention de rester à l'écart des affaires, se retrouve à en prendre la tête. Une chronique de la manière dont on devient ce qu'on refusait d'être.",
+      "credits": [
+        { "person": "francis-ford-coppola", "role": "realisateur", "order": 0 },
+        { "person": "marlon-brando", "role": "acteur", "character": "Vito Corleone", "order": 1 },
+        { "person": "al-pacino", "role": "acteur", "character": "Michael Corleone", "order": 2 }
+      ]
+    },
+    {
+      "slug": "orgueil-et-prejuges-film", "type": "film", "title": "Orgueil et Préjugés",
+      "original_title": "Pride & Prejudice",
+      "release_date": "2005-09-16", "date_precision": "day", "original_language": "en",
+      "runtime_minutes": 129, "source": "tmdb",
+      "genres": ["romance", "drame", "historique"],
+      "synopsis": "Dans l'Angleterre rurale du début du XIXe siècle, cinq sœurs doivent se marier faute de pouvoir hériter. L'aînée des cadettes s'y refuse, et rencontre un homme aussi orgueilleux qu'elle est prévenue.",
+      "credits": [
+        { "person": "joe-wright", "role": "realisateur", "order": 0 },
+        { "person": "keira-knightley", "role": "acteur", "character": "Elizabeth Bennet", "order": 1 }
+      ]
+    },
+    {
+      "slug": "no-country-for-old-men", "type": "film", "title": "No Country for Old Men",
+      "release_date": "2007-11-21", "date_precision": "day", "original_language": "en",
+      "runtime_minutes": 122, "source": "tmdb",
+      "genres": ["thriller", "policier", "western"],
+      "synopsis": "Un chasseur tombe sur une valise pleine d'argent au milieu d'un règlement de comptes raté. Il la prend. À ses trousses, un tueur qui applique ses propres règles et un shérif vieillissant qui ne comprend plus son époque.",
+      "credits": [
+        { "person": "joel-coen", "role": "realisateur", "order": 0 },
+        { "person": "ethan-coen", "role": "realisateur", "order": 1 },
+        { "person": "javier-bardem", "role": "acteur", "character": "Anton Chigurh", "order": 2 }
+      ]
+    },
+    {
+      "slug": "le-nom-de-la-rose-film", "type": "film", "title": "Le Nom de la rose",
+      "original_title": "Der Name der Rose",
+      "release_date": "1986-09-24", "date_precision": "day", "original_language": "en",
+      "runtime_minutes": 130, "source": "tmdb",
+      "genres": ["policier", "historique", "drame"],
+      "synopsis": "Dans une abbaye italienne du XIVe siècle, un moine franciscain enquête sur une série de morts pendant qu'un débat théologique tourne au procès. Le savoir y est un objet dangereux, et la bibliothèque un labyrinthe au sens propre.",
+      "credits": [
+        { "person": "jean-jacques-annaud", "role": "realisateur", "order": 0 },
+        { "person": "sean-connery", "role": "acteur", "character": "Guillaume de Baskerville", "order": 1 }
+      ]
+    },
+    {
+      "slug": "lotr-communaute-film", "type": "film", "title": "Le Seigneur des anneaux : La Communauté de l'anneau",
+      "original_title": "The Lord of the Rings: The Fellowship of the Ring",
+      "release_date": "2001-12-19", "date_precision": "day", "original_language": "en",
+      "runtime_minutes": 178, "source": "tmdb",
+      "genres": ["fantasy", "aventure", "drame"],
+      "synopsis": "Un anneau capable de soumettre le monde échoit à un hobbit qui n'a rien demandé. Une compagnie de neuf se forme pour le détruire, et se défait en chemin.",
+      "credits": [
+        { "person": "peter-jackson", "role": "realisateur", "order": 0 },
+        { "person": "elijah-wood", "role": "acteur", "character": "Frodon Sacquet", "order": 1 },
+        { "person": "ian-mckellen", "role": "acteur", "character": "Gandalf", "order": 2 },
+        { "person": "sean-bean", "role": "acteur", "character": "Boromir", "order": 3 }
+      ]
+    },
+    {
+      "slug": "lotr-deux-tours-film", "type": "film", "title": "Le Seigneur des anneaux : Les Deux Tours",
+      "original_title": "The Lord of the Rings: The Two Towers",
+      "release_date": "2002-12-18", "date_precision": "day", "original_language": "en",
+      "runtime_minutes": 179, "source": "tmdb",
+      "genres": ["fantasy", "aventure", "action"],
+      "synopsis": "La compagnie dispersée mène trois trajets séparés : deux hobbits vers la montagne, les autres vers une guerre qui commence. Le film tient sur un siège nocturne qui occupe son dernier tiers.",
+      "credits": [
+        { "person": "peter-jackson", "role": "realisateur", "order": 0 },
+        { "person": "elijah-wood", "role": "acteur", "character": "Frodon Sacquet", "order": 1 },
+        { "person": "ian-mckellen", "role": "acteur", "character": "Gandalf", "order": 2 }
+      ]
+    },
+    {
+      "slug": "parasite", "type": "film", "title": "Parasite",
+      "original_title": "기생충",
+      "release_date": "2019-05-30", "date_precision": "day", "original_language": "ko",
+      "runtime_minutes": 132, "source": "tmdb",
+      "genres": ["drame", "thriller"],
+      "synopsis": "Une famille sans emploi s'introduit une à une au service d'une famille fortunée. La mécanique est comique jusqu'au moment précis où elle cesse de l'être.",
+      "credits": [
+        { "person": "bong-joon-ho", "role": "realisateur", "order": 0 },
+        { "person": "song-kang-ho", "role": "acteur", "character": "Kim Ki-taek", "order": 1 }
+      ]
+    },
+    {
+      "slug": "amelie", "type": "film", "title": "Le Fabuleux Destin d'Amélie Poulain",
+      "release_date": "2001-04-25", "date_precision": "day", "original_language": "fr",
+      "runtime_minutes": 122, "source": "tmdb",
+      "genres": ["romance", "drame"],
+      "synopsis": "Une serveuse de Montmartre décide d'organiser en secret le bonheur des gens autour d'elle, ce qui l'arrange pour éviter de s'occuper du sien. Un Paris reconstitué, assumé comme tel.",
+      "credits": [
+        { "person": "jean-pierre-jeunet", "role": "realisateur", "order": 0 },
+        { "person": "audrey-tautou", "role": "acteur", "character": "Amélie Poulain", "order": 1 },
+        { "person": "mathieu-kassovitz", "role": "acteur", "character": "Nino Quincampoix", "order": 2 }
+      ]
+    },
+    {
+      "slug": "inception", "type": "film", "title": "Inception",
+      "release_date": "2010-07-16", "date_precision": "day", "original_language": "en",
+      "runtime_minutes": 148, "source": "tmdb",
+      "genres": ["science-fiction", "action", "thriller"],
+      "synopsis": "Une équipe s'introduit dans les rêves pour y voler des secrets. On leur demande l'inverse : y déposer une idée. Le film emboîte ses niveaux de récit comme son sujet le suggère.",
+      "credits": [
+        { "person": "christopher-nolan", "role": "realisateur", "order": 0 },
+        { "person": "leonardo-dicaprio", "role": "acteur", "character": "Dom Cobb", "order": 1 }
+      ]
+    },
+    {
+      "slug": "mad-max-fury-road", "type": "film", "title": "Mad Max : Fury Road",
+      "original_title": "Mad Max: Fury Road",
+      "release_date": "2015-05-15", "date_precision": "day", "original_language": "en",
+      "runtime_minutes": 120, "source": "tmdb",
+      "genres": ["action", "aventure", "science-fiction"],
+      "synopsis": "Une conductrice s'enfuit d'une citadelle désertique avec cinq femmes retenues par son maître. La poursuite qui suit dure deux heures et raconte tout ce qu'il y a à savoir sans presque un mot d'exposition.",
+      "credits": [
+        { "person": "george-miller", "role": "realisateur", "order": 0 },
+        { "person": "charlize-theron", "role": "acteur", "character": "Furiosa", "order": 1 },
+        { "person": "tom-hardy", "role": "acteur", "character": "Max Rockatansky", "order": 2 }
+      ]
+    },
+    {
+      "slug": "portrait-jeune-fille-en-feu", "type": "film", "title": "Portrait de la jeune fille en feu",
+      "release_date": "2019-09-18", "date_precision": "day", "original_language": "fr",
+      "runtime_minutes": 122, "source": "tmdb",
+      "genres": ["drame", "romance", "historique"],
+      "synopsis": "Sur une île bretonne au XVIIIe siècle, une peintre doit faire le portrait d'une jeune femme à son insu, en vue d'un mariage arrangé. Un film sur ce que c'est que regarder quelqu'un, et être regardée en retour.",
+      "credits": [
+        { "person": "celine-sciamma", "role": "realisateur", "order": 0 },
+        { "person": "noemie-merlant", "role": "acteur", "character": "Marianne", "order": 1 },
+        { "person": "adele-haenel", "role": "acteur", "character": "Héloïse", "order": 2 }
+      ]
+    },
+    {
+      "slug": "les-sept-samourais", "type": "film", "title": "Les Sept Samouraïs",
+      "original_title": "七人の侍",
+      "release_date": "1954-04-26", "date_precision": "day", "original_language": "ja",
+      "runtime_minutes": 207, "source": "tmdb",
+      "genres": ["action", "aventure", "drame"],
+      "synopsis": "Un village de paysans, pillé chaque année après la récolte, engage sept samouraïs sans maître pour se défendre. Le modèle dont le cinéma d'action occidental n'a jamais cessé de s'inspirer.",
+      "credits": [
+        { "person": "akira-kurosawa", "role": "realisateur", "order": 0 },
+        { "person": "toshiro-mifune", "role": "acteur", "character": "Kikuchiyo", "order": 1 }
+      ]
+    },
+    {
+      "slug": "le-septieme-sceau", "type": "film", "title": "Le Septième Sceau",
+      "original_title": "Det sjunde inseglet",
+      "release_date": "1957-02-16", "date_precision": "day", "original_language": "sv",
+      "runtime_minutes": 96, "source": "tmdb",
+      "genres": ["drame", "historique"],
+      "synopsis": "Un chevalier revenu des croisades joue une partie d'échecs contre la Mort pour gagner du temps, dans une Suède ravagée par la peste. Le temps gagné sert à chercher une réponse qui ne vient pas.",
+      "credits": [
+        { "person": "ingmar-bergman", "role": "realisateur", "order": 0 },
+        { "person": "max-von-sydow", "role": "acteur", "character": "Antonius Block", "order": 1 }
+      ]
+    },
+
+    {
+      "slug": "game-of-thrones", "type": "serie", "title": "Le Trône de fer",
+      "original_title": "Game of Thrones",
+      "release_date": "2011-04-17", "date_precision": "day", "original_language": "en",
+      "source": "tmdb", "attributes": { "seasons": 8, "episodes": 73 },
+      "genres": ["fantasy", "drame", "aventure"],
+      "synopsis": "Plusieurs familles nobles se disputent un trône pendant qu'une menace bien plus ancienne remonte du nord. La série a tenu son pari politique avant de devoir conclure plus vite que son matériau.",
+      "credits": [
+        { "person": "peter-dinklage", "role": "acteur", "character": "Tyrion Lannister", "order": 1 },
+        { "person": "emilia-clarke", "role": "acteur", "character": "Daenerys Targaryen", "order": 2 },
+        { "person": "sean-bean", "role": "acteur", "character": "Eddard Stark", "order": 3 }
+      ]
+    },
+    {
+      "slug": "breaking-bad", "type": "serie", "title": "Breaking Bad",
+      "release_date": "2008-01-20", "date_precision": "day", "original_language": "en",
+      "source": "tmdb", "attributes": { "seasons": 5, "episodes": 62 },
+      "genres": ["drame", "policier", "thriller"],
+      "synopsis": "Un professeur de chimie de lycée, diagnostiqué d'un cancer, se met à fabriquer de la méthamphétamine pour laisser de l'argent à sa famille. Le prétexte s'épuise bien avant lui.",
+      "credits": [
+        { "person": "vince-gilligan", "role": "createur", "order": 0 },
+        { "person": "bryan-cranston", "role": "acteur", "character": "Walter White", "order": 1 },
+        { "person": "aaron-paul", "role": "acteur", "character": "Jesse Pinkman", "order": 2 }
+      ]
+    },
+    {
+      "slug": "better-call-saul", "type": "serie", "title": "Better Call Saul",
+      "release_date": "2015-02-08", "date_precision": "day", "original_language": "en",
+      "source": "tmdb", "attributes": { "seasons": 6, "episodes": 63 },
+      "genres": ["drame", "policier"],
+      "synopsis": "Avant de devenir l'avocat véreux que l'on connaît, un homme tente sincèrement d'exercer honnêtement, et échoue pour des raisons qui lui appartiennent. Plus lente que la série dont elle procède, et sans doute plus fine.",
+      "credits": [
+        { "person": "vince-gilligan", "role": "createur", "order": 0 },
+        { "person": "bob-odenkirk", "role": "acteur", "character": "Jimmy McGill", "order": 1 }
+      ]
+    },
+    {
+      "slug": "chernobyl", "type": "serie", "title": "Chernobyl",
+      "release_date": "2019-05-06", "date_precision": "day", "original_language": "en",
+      "source": "tmdb", "attributes": { "seasons": 1, "episodes": 5 },
+      "genres": ["drame", "historique", "thriller"],
+      "synopsis": "La reconstitution des heures et des mois qui ont suivi l'accident de 1986. La série s'intéresse moins à la catastrophe qu'au coût du mensonge institutionnel qui l'entoure.",
+      "credits": [
+        { "person": "craig-mazin", "role": "createur", "order": 0 },
+        { "person": "jared-harris", "role": "acteur", "character": "Valeri Legassov", "order": 1 }
+      ]
+    },
+    {
+      "slug": "the-wire", "type": "serie", "title": "Sur écoute",
+      "original_title": "The Wire",
+      "release_date": "2002-06-02", "date_precision": "day", "original_language": "en",
+      "source": "tmdb", "attributes": { "seasons": 5, "episodes": 60 },
+      "genres": ["drame", "policier"],
+      "synopsis": "Baltimore vue par ses institutions, une par saison : la police, le port, la mairie, l'école, la presse. Aucune ne fonctionne, et la série explique patiemment pourquoi.",
+      "credits": [
+        { "person": "david-simon", "role": "createur", "order": 0 },
+        { "person": "dominic-west", "role": "acteur", "character": "Jimmy McNulty", "order": 1 },
+        { "person": "idris-elba", "role": "acteur", "character": "Stringer Bell", "order": 2 }
+      ]
+    },
+    {
+      "slug": "le-bureau-des-legendes", "type": "serie", "title": "Le Bureau des légendes",
+      "release_date": "2015-04-27", "date_precision": "day", "original_language": "fr",
+      "source": "tmdb", "attributes": { "seasons": 5, "episodes": 50 },
+      "genres": ["espionnage", "drame", "thriller"],
+      "synopsis": "Au sein de la DGSE, le service qui gère les agents sous couverture. Un espionnage administratif, fait de réunions et de dossiers, où la tension vient de la paperasse autant que du terrain.",
+      "credits": [
+        { "person": "eric-rochant", "role": "createur", "order": 0 },
+        { "person": "mathieu-kassovitz", "role": "acteur", "character": "Guillaume Debailly", "order": 1 }
+      ]
+    },
+
+    {
+      "slug": "lotr-communaute-livre", "type": "book", "title": "La Communauté de l'anneau",
+      "original_title": "The Fellowship of the Ring",
+      "release_date": "1954-07-29", "date_precision": "day", "original_language": "en",
+      "source": "openlibrary", "attributes": { "pages": 423, "publisher": "Allen & Unwin" },
+      "genres": ["fantasy", "aventure", "roman"],
+      "synopsis": "Premier volume du cycle. L'anneau quitte la Comté et la compagnie se forme à Fondcombe. Le récit prend son temps avant de partir, et ce temps compte.",
+      "credits": [{ "person": "jrr-tolkien", "role": "auteur", "order": 0 }]
+    },
+    {
+      "slug": "androides-moutons-electriques", "type": "book", "title": "Les androïdes rêvent-ils de moutons électriques ?",
+      "original_title": "Do Androids Dream of Electric Sheep?",
+      "release_date": "1968-01-01", "date_precision": "year", "original_language": "en",
+      "source": "openlibrary", "attributes": { "pages": 210 },
+      "genres": ["science-fiction", "roman"],
+      "synopsis": "Un chasseur de primes traque des androïdes évadés dans une Terre désertée par ceux qui ont pu partir. Le roman s'attarde sur l'empathie comme seul critère de l'humain — et sur sa fragilité.",
+      "credits": [{ "person": "philip-k-dick", "role": "auteur", "order": 0 }]
+    },
+    {
+      "slug": "shining-livre", "type": "book", "title": "Shining",
+      "original_title": "The Shining",
+      "release_date": "1977-01-28", "date_precision": "day", "original_language": "en",
+      "source": "openlibrary", "attributes": { "pages": 447 },
+      "genres": ["horreur", "roman"],
+      "synopsis": "Un père alcoolique en rémission accepte de garder un hôtel isolé pour l'hiver. Le roman est explicite là où son adaptation reste ambiguë, et s'intéresse davantage à la chute de l'homme qu'au lieu.",
+      "credits": [{ "person": "stephen-king", "role": "auteur", "order": 0 }]
+    },
+    {
+      "slug": "le-parrain-livre", "type": "book", "title": "Le Parrain",
+      "original_title": "The Godfather",
+      "release_date": "1969-03-10", "date_precision": "day", "original_language": "en",
+      "source": "openlibrary", "attributes": { "pages": 448 },
+      "genres": ["policier", "roman", "drame"],
+      "synopsis": "La chronique d'une famille mafieuse new-yorkaise d'après-guerre. Plus digressif que le film, avec des pans entiers que l'adaptation a écartés.",
+      "credits": [{ "person": "mario-puzo", "role": "auteur", "order": 0 }]
+    },
+    {
+      "slug": "orgueil-et-prejuges-livre", "type": "book", "title": "Orgueil et Préjugés",
+      "original_title": "Pride and Prejudice",
+      "release_date": "1813-01-28", "date_precision": "day", "original_language": "en",
+      "source": "openlibrary", "attributes": { "pages": 279 },
+      "genres": ["romance", "roman"],
+      "synopsis": "Elizabeth Bennet, deuxième de cinq sœurs, refuse de se marier par nécessité. Le roman tient sur son dialogue, et sur l'ironie constante de sa narratrice.",
+      "credits": [{ "person": "jane-austen", "role": "auteur", "order": 0 }]
+    },
+    {
+      "slug": "non-ce-pays-nest-pas", "type": "book", "title": "Non, ce pays n'est pas pour le vieil homme",
+      "original_title": "No Country for Old Men",
+      "release_date": "2005-07-19", "date_precision": "day", "original_language": "en",
+      "source": "openlibrary", "attributes": { "pages": 309 },
+      "genres": ["thriller", "western", "roman"],
+      "synopsis": "À la frontière du Texas, un homme prend l'argent d'un trafic qui a mal tourné. Une prose sans guillemets ni fioriture, où la violence arrive sans être annoncée.",
+      "credits": [{ "person": "cormac-mccarthy", "role": "auteur", "order": 0 }]
+    },
+    {
+      "slug": "le-nom-de-la-rose-livre", "type": "book", "title": "Le Nom de la rose",
+      "original_title": "Il nome della rosa",
+      "release_date": "1980-01-01", "date_precision": "year", "original_language": "it",
+      "source": "openlibrary", "attributes": { "pages": 512 },
+      "genres": ["policier", "historique", "roman"],
+      "synopsis": "Une enquête dans une abbaye du XIVe siècle, doublée d'un traité sur le signe et l'interprétation. Le roman policier n'est qu'un des étages du bâtiment.",
+      "credits": [{ "person": "umberto-eco", "role": "auteur", "order": 0 }]
+    },
+    {
+      "slug": "dune-livre", "type": "book", "title": "Dune",
+      "release_date": "1965-08-01", "date_precision": "day", "original_language": "en",
+      "source": "openlibrary", "attributes": { "pages": 412 },
+      "genres": ["science-fiction", "roman", "aventure"],
+      "synopsis": "Sur une planète désertique, l'eau vaut plus que le sang et une épice conditionne le commerce interstellaire. Écologie, religion et politique y sont un seul et même mécanisme.",
+      "credits": [{ "person": "frank-herbert", "role": "auteur", "order": 0 }]
+    },
+    {
+      "slug": "le-trone-de-fer-livre", "type": "book", "title": "Le Trône de fer",
+      "original_title": "A Game of Thrones",
+      "release_date": "1996-08-01", "date_precision": "day", "original_language": "en",
+      "source": "openlibrary", "attributes": { "pages": 694 },
+      "genres": ["fantasy", "roman", "drame"],
+      "synopsis": "Premier volume d'un cycle qui traite la fantasy avec les outils du roman politique. Les chapitres alternent les points de vue, et aucun personnage n'est à l'abri.",
+      "credits": [{ "person": "george-rr-martin", "role": "auteur", "order": 0 }]
+    },
+    {
+      "slug": "letranger", "type": "book", "title": "L'Étranger",
+      "release_date": "1942-01-01", "date_precision": "year", "original_language": "fr",
+      "source": "openlibrary", "attributes": { "pages": 159 },
+      "genres": ["roman", "drame"],
+      "synopsis": "Un homme enterre sa mère sans pleurer, puis tue sans motif clair. Son procès lui reproche moins le meurtre que son indifférence — c'est le sujet du livre.",
+      "credits": [{ "person": "albert-camus", "role": "auteur", "order": 0 }]
+    },
+    {
+      "slug": "cent-ans-de-solitude", "type": "book", "title": "Cent ans de solitude",
+      "original_title": "Cien años de soledad",
+      "release_date": "1967-05-30", "date_precision": "day", "original_language": "es",
+      "source": "openlibrary", "attributes": { "pages": 417 },
+      "genres": ["roman", "drame"],
+      "synopsis": "Six générations d'une famille dans un village fondé au milieu de nulle part. Le prodige y est raconté du même ton neutre que la pluie qui tombe.",
+      "credits": [{ "person": "gabriel-garcia-marquez", "role": "auteur", "order": 0 }]
+    },
+    {
+      "slug": "1984", "type": "book", "title": "1984",
+      "original_title": "Nineteen Eighty-Four",
+      "release_date": "1949-06-08", "date_precision": "day", "original_language": "en",
+      "source": "openlibrary", "attributes": { "pages": 328 },
+      "genres": ["science-fiction", "roman"],
+      "synopsis": "Un employé chargé de réécrire les archives du passé commence à tenir un journal. Le roman s'intéresse surtout à la langue : appauvrir le vocabulaire pour rendre la dissidence impensable.",
+      "credits": [{ "person": "george-orwell", "role": "auteur", "order": 0 }]
+    },
+    {
+      "slug": "la-horde-du-contrevent", "type": "book", "title": "La Horde du Contrevent",
+      "release_date": "2004-10-01", "date_precision": "day", "original_language": "fr",
+      "source": "openlibrary", "attributes": { "pages": 522 },
+      "genres": ["science-fiction", "fantasy", "roman"],
+      "synopsis": "Vingt-trois personnes remontent un monde balayé par le vent, à pied, vers sa source. Chaque narrateur a son propre signe typographique — la forme du texte fait partie du voyage.",
+      "credits": [{ "person": "alain-damasio", "role": "auteur", "order": 0 }]
+    },
+    {
+      "slug": "le-meilleur-des-mondes", "type": "book", "title": "Le Meilleur des mondes",
+      "original_title": "Brave New World",
+      "release_date": "1932-01-01", "date_precision": "year", "original_language": "en",
+      "source": "openlibrary", "attributes": { "pages": 311 },
+      "genres": ["science-fiction", "roman"],
+      "synopsis": "Une société stable où chacun est produit pour sa fonction et content de l'être. La contrainte y est inutile : le confort et le divertissement suffisent.",
+      "credits": [{ "person": "aldous-huxley", "role": "auteur", "order": 0 }]
+    },
+    {
+      "slug": "kafka-sur-le-rivage", "type": "book", "title": "Kafka sur le rivage",
+      "original_title": "海辺のカフカ",
+      "release_date": "2002-09-12", "date_precision": "day", "original_language": "ja",
+      "source": "openlibrary", "attributes": { "pages": 618 },
+      "genres": ["roman", "fantasy"],
+      "synopsis": "Deux récits parallèles : un adolescent en fugue et un vieil homme qui parle aux chats. Ils convergent sans que le roman explique jamais tout à fait comment.",
+      "credits": [{ "person": "haruki-murakami", "role": "auteur", "order": 0 }]
+    }
+  ],
+
+  "_note_relations": "Le pivot livre <-> adaptation : c'est l'étape 5 du scénario de démonstration, et ce que ni Letterboxd ni Goodreads ne font. Le type inverse est déduit à l'affichage (work_relation_type.inverse_code), pas stocké en double.",
+  "relations": [
+    { "from": "lotr-communaute-film",        "to": "lotr-communaute-livre",        "type": "adapte_de" },
+    { "from": "blade-runner",                "to": "androides-moutons-electriques","type": "adapte_de" },
+    { "from": "shining-film",                "to": "shining-livre",                "type": "adapte_de" },
+    { "from": "le-parrain-film",             "to": "le-parrain-livre",             "type": "adapte_de" },
+    { "from": "orgueil-et-prejuges-film",    "to": "orgueil-et-prejuges-livre",    "type": "adapte_de" },
+    { "from": "no-country-for-old-men",      "to": "non-ce-pays-nest-pas",         "type": "adapte_de" },
+    { "from": "le-nom-de-la-rose-film",      "to": "le-nom-de-la-rose-livre",      "type": "adapte_de" },
+    { "from": "dune-2021",                   "to": "dune-livre",                   "type": "adapte_de" },
+    { "from": "game-of-thrones",             "to": "le-trone-de-fer-livre",        "type": "adapte_de" },
+    { "from": "lotr-deux-tours-film",        "to": "lotr-communaute-film",         "type": "suite_de" },
+    { "from": "blade-runner-2049",           "to": "blade-runner",                 "type": "suite_de" },
+    { "from": "better-call-saul",            "to": "breaking-bad",                 "type": "prequel_de" }
+  ]
+}

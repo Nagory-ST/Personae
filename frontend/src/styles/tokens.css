@@ -1,0 +1,163 @@
+/* =============================================================================
+ * Personae — tokens de design
+ * =============================================================================
+ * Source de vérité des valeurs visuelles. Généré à partir de la Direction
+ * Artistique (docs/DIRECTION-ARTISTIQUE.md, lot L2, 30/08/2026).
+ *
+ * Trois niveaux, et une règle : un composant lit un token SÉMANTIQUE, jamais
+ * un token global. C'est ce qui permet de retoucher la palette sans relire
+ * l'application — et ce que les maquettes ne permettaient pas, chaque écran
+ * redéfinissant ses couleurs pour son compte.
+ *
+ * Les contrastes sont vérifiés par `scripts/check-contrast.py`, qui LIT ce
+ * fichier. Modifier une couleur ici et casser l'accessibilité fait échouer
+ * la vérification — ce n'est pas une note dans un document, c'est un contrôle.
+ * ========================================================================== */
+
+:root {
+  /* ---------------------------------------------------------------------
+   * NIVEAU 1 — GLOBAL : valeurs brutes, aucune signification d'usage.
+   * Relevées dans l'objet `C` des 9 maquettes, sauf mention contraire.
+   * ------------------------------------------------------------------- */
+  --p-night: #0b132b;
+  --p-dark: #1c2541;
+  --p-rose: #f2d6d6;
+  --p-copper: #e9b1a6;
+  --p-text: #f0e6e6;
+
+  /* CORRIGÉ : le #6D5B6E d'origine donne 2.43:1 sur --p-dark, très en
+   * dessous du seuil AA de 4.5:1 — et il portait du texte de 9 à 12 px.
+   * Teinte (297°) et saturation (9 %) inchangées ; luminosité 39 % -> 57 %. */
+  --p-mauve: #9c889d;
+  /* La valeur d'origine, conservée pour le NON-TEXTUEL uniquement. */
+  --p-mauve-decor: #6d5b6e;
+
+  --p-green: #34d399;
+  --p-red: #f87171;
+  --p-amber: #fcd34d;
+
+  --p-glass: rgba(255, 255, 255, 0.05);
+  --p-glass-border: rgba(233, 177, 166, 0.12);
+
+  /* ---------------------------------------------------------------------
+   * NIVEAU 2 — SÉMANTIQUE : le rôle. C'est ce que lisent les composants.
+   * ------------------------------------------------------------------- */
+  --color-bg: var(--p-night);
+  --color-surface: var(--p-dark);
+  --color-surface-glass: var(--p-glass);
+  --color-border: var(--p-glass-border);
+
+  --color-text: var(--p-text);
+  --color-text-secondary: var(--p-mauve);
+  --color-text-accent: var(--p-copper);
+  --color-text-soft: var(--p-rose);
+
+  --color-accent: var(--p-copper);
+  --color-accent-hover: var(--p-rose);
+  --color-focus-ring: var(--p-copper);
+
+  --color-success: var(--p-green);
+  --color-danger: var(--p-red);
+  --color-warning: var(--p-amber);
+
+  /* Séparateurs, traits décoratifs, fonds. JAMAIS du texte. */
+  --color-decor-muted: var(--p-mauve-decor);
+
+  /* ---------------------------------------------------------------------
+   * TYPOGRAPHIE — 7 tailles. Le code des maquettes en comptait 15, dont
+   * du 7 px. Plancher absolu : 11 px.
+   * ------------------------------------------------------------------- */
+  --font-display: "Playfair Display", Georgia, "Times New Roman", serif;
+  --font-ui: Inter, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+  --text-display: 38px;
+  --text-title: 22px;
+  --text-heading: 18px;
+  --text-body: 14px;
+  --text-ui: 13px;
+  --text-meta: 12px;
+  --text-micro: 11px;
+
+  --leading-body: 1.5;
+  --leading-title: 1.2;
+  --tracking-title: -0.3px;
+  --tracking-micro: 0.04em;
+
+  /* ---------------------------------------------------------------------
+   * ESPACEMENT — base 4 px.
+   * ------------------------------------------------------------------- */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+
+  /* ---------------------------------------------------------------------
+   * RAYONS — jamais au-delà de 12 px hors pastilles.
+   * ------------------------------------------------------------------- */
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 10px;
+  --radius-full: 50%;
+
+  /* ---------------------------------------------------------------------
+   * MOTION — 180 ms est la valeur dominante du code (33 occurrences).
+   * ------------------------------------------------------------------- */
+  --motion-fast: 120ms;
+  --motion-base: 180ms;
+  --motion-slow: 280ms;
+  --ease-out: ease-out;
+  --ease-panel: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* ---------------------------------------------------------------------
+   * NIVEAU 3 — COMPOSANT : dérivé du sémantique, jamais du global.
+   * ------------------------------------------------------------------- */
+  --card-bg: var(--color-surface-glass);
+  --card-border: var(--color-border);
+  --card-radius: var(--radius-lg);
+  --card-padding: var(--space-4) var(--space-5);
+
+  --btn-padding: var(--space-3) var(--space-4);
+  --btn-radius: var(--radius-md);
+  --btn-bg-primary: var(--color-accent);
+  /* Texte sombre sur le cuivre : 9.90:1. L'inverse serait illisible. */
+  --btn-fg-primary: var(--p-night);
+
+  --tag-padding: var(--space-1) var(--space-2);
+  --tag-radius: var(--radius-sm);
+
+  --sidebar-width: 240px;
+  --content-max-width: 1100px;
+  --viewport-min-width: 1440px;
+
+  --rating-color: var(--color-accent);
+  --focus-ring-width: 2px;
+  --focus-ring-offset: 2px;
+}
+
+/* =============================================================================
+ * Règles de base non négociables (§3.2 et §7 de la DA)
+ * ========================================================================== */
+
+/* Un clavier doit toujours voir où il est. `outline: none` sans anneau de
+ * remplacement est interdit — les maquettes ne géraient aucun focus. */
+:where(a, button, input, select, textarea, [tabindex]):focus-visible {
+  outline: var(--focus-ring-width) solid var(--color-focus-ring);
+  outline-offset: var(--focus-ring-offset);
+}
+
+/* Exigence d'accessibilité, pas une option de confort : le mouvement peut
+ * provoquer des malaises vestibulaires. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "_note": "Tables de référence. ADR D-06 : des tables, pas des ENUM PostgreSQL — ajouter la musique un jour doit être un INSERT, pas une migration de type.",
+
+  "work_types": [
+    { "code": "film",  "label": "Film",  "sort_order": 1, "is_enabled": true },
+    { "code": "serie", "label": "Série", "sort_order": 2, "is_enabled": true },
+    { "code": "book",  "label": "Livre", "sort_order": 3, "is_enabled": true }
+  ],
+
+  "credit_roles": [
+    { "code": "realisateur", "label": "Réalisation", "applies_to_type": null,   "sort_order": 1 },
+    { "code": "acteur",      "label": "Interprétation", "applies_to_type": null, "sort_order": 2 },
+    { "code": "auteur",      "label": "Écriture",   "applies_to_type": "book", "sort_order": 3 },
+    { "code": "createur",    "label": "Création",   "applies_to_type": "serie", "sort_order": 4 }
+  ],
+
+  "work_relation_types": [
+    { "code": "adapte_de",  "label": "Adapté de",   "inverse_code": "adapte_en" },
+    { "code": "adapte_en",  "label": "Adapté en",   "inverse_code": "adapte_de" },
+    { "code": "suite_de",   "label": "Suite de",    "inverse_code": "suivi_par" },
+    { "code": "suivi_par",  "label": "Suivi par",   "inverse_code": "suite_de" },
+    { "code": "prequel_de", "label": "Préquelle de","inverse_code": "precede_par" },
+    { "code": "precede_par","label": "Précédé par", "inverse_code": "prequel_de" }
+  ],
+
+  "_note_genres": "Vocabulaire éditorial de Personae, volontairement plat (le brief demande de ne pas alourdir l'arborescence). Commun aux trois domaines quand le genre a du sens dans chacun.",
+  "genres": [
+    { "slug": "science-fiction",  "label": "Science-fiction",  "sort_order": 1 },
+    { "slug": "fantasy",          "label": "Fantasy",          "sort_order": 2 },
+    { "slug": "drame",            "label": "Drame",            "sort_order": 3 },
+    { "slug": "thriller",         "label": "Thriller",         "sort_order": 4 },
+    { "slug": "policier",         "label": "Policier",         "sort_order": 5 },
+    { "slug": "horreur",          "label": "Horreur",          "sort_order": 6 },
+    { "slug": "romance",          "label": "Romance",          "sort_order": 7 },
+    { "slug": "comedie-musicale", "label": "Comédie musicale", "sort_order": 8 },
+    { "slug": "action",           "label": "Action",           "sort_order": 9 },
+    { "slug": "aventure",         "label": "Aventure",         "sort_order": 10 },
+    { "slug": "animation",        "label": "Animation",        "sort_order": 11 },
+    { "slug": "historique",       "label": "Historique",       "sort_order": 12 },
+    { "slug": "roman",            "label": "Roman",            "sort_order": 13 },
+    { "slug": "espionnage",       "label": "Espionnage",       "sort_order": 14 },
+    { "slug": "western",          "label": "Western",          "sort_order": 15 }
+  ],
+
+  "_note_sources": "L'attribution est due DÈS LA DÉMO (RG-23) : c'est une condition de licence des métadonnées, indépendante du fait qu'on affiche ou non des images tierces (on n'en affiche aucune).",
+  "external_sources": [
+    {
+      "code": "tmdb",
+      "label": "The Movie Database",
+      "attribution_text": "Certaines métadonnées de films et de séries proviennent de The Movie Database (TMDB). Ce produit utilise l'API de TMDB sans être approuvé ou certifié par TMDB.",
+      "is_enabled": true
+    },
+    {
+      "code": "openlibrary",
+      "label": "Open Library",
+      "attribution_text": "Certaines métadonnées de livres proviennent d'Open Library, un projet de l'Internet Archive.",
+      "is_enabled": true
+    },
+    {
+      "code": "manuel",
+      "label": "Saisie Personae",
+      "attribution_text": "Fiche constituée et rédigée par Personae.",
+      "is_enabled": true
+    }
+  ],
+
+  "_note_genre_mapping": "Risque B-09 : le mapping est ÉDITORIAL et MANUEL. Vocabulaire fermé côté TMDB, sujets en texte libre côté OpenLibrary. Borné au jeu de démonstration, comme prévu. genre_id null = valeur source ignorée volontairement (on distingue le choix conscient de l'oubli).",
+  "genre_mappings": [
+    { "source_code": "tmdb", "source_value": "Science Fiction", "genre_slug": "science-fiction" },
+    { "source_code": "tmdb", "source_value": "Fantasy",         "genre_slug": "fantasy" },
+    { "source_code": "tmdb", "source_value": "Drama",           "genre_slug": "drame" },
+    { "source_code": "tmdb", "source_value": "Thriller",        "genre_slug": "thriller" },
+    { "source_code": "tmdb", "source_value": "Crime",           "genre_slug": "policier" },
+    { "source_code": "tmdb", "source_value": "Horror",          "genre_slug": "horreur" },
+    { "source_code": "tmdb", "source_value": "Romance",         "genre_slug": "romance" },
+    { "source_code": "tmdb", "source_value": "Music",           "genre_slug": "comedie-musicale" },
+    { "source_code": "tmdb", "source_value": "Action",          "genre_slug": "action" },
+    { "source_code": "tmdb", "source_value": "Adventure",       "genre_slug": "aventure" },
+    { "source_code": "tmdb", "source_value": "Animation",       "genre_slug": "animation" },
+    { "source_code": "tmdb", "source_value": "History",         "genre_slug": "historique" },
+    { "source_code": "tmdb", "source_value": "War",             "genre_slug": "historique" },
+    { "source_code": "tmdb", "source_value": "Western",         "genre_slug": "western" },
+    { "source_code": "tmdb", "source_value": "TV Movie",        "genre_slug": null },
+    { "source_code": "tmdb", "source_value": "Family",          "genre_slug": null },
+    { "source_code": "openlibrary", "source_value": "Science fiction",        "genre_slug": "science-fiction" },
+    { "source_code": "openlibrary", "source_value": "Fantasy fiction",        "genre_slug": "fantasy" },
+    { "source_code": "openlibrary", "source_value": "Fiction",                "genre_slug": "roman" },
+    { "source_code": "openlibrary", "source_value": "English fiction",        "genre_slug": "roman" },
+    { "source_code": "openlibrary", "source_value": "Detective and mystery stories", "genre_slug": "policier" },
+    { "source_code": "openlibrary", "source_value": "Horror tales",           "genre_slug": "horreur" },
+    { "source_code": "openlibrary", "source_value": "Love stories",           "genre_slug": "romance" },
+    { "source_code": "openlibrary", "source_value": "Historical fiction",     "genre_slug": "historique" },
+    { "source_code": "openlibrary", "source_value": "Dystopias",              "genre_slug": "science-fiction" },
+    { "source_code": "openlibrary", "source_value": "Western stories",        "genre_slug": "western" },
+    { "source_code": "openlibrary", "source_value": "Spy stories",            "genre_slug": "espionnage" },
+    { "source_code": "openlibrary", "source_value": "Accessible book",        "genre_slug": null },
+    { "source_code": "openlibrary", "source_value": "Protected DAISY",        "genre_slug": null },
+    { "source_code": "openlibrary", "source_value": "In library",             "genre_slug": null }
+  ]
+}

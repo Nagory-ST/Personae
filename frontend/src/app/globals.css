@@ -1,0 +1,41 @@
+/* Les tokens de la Direction Artistique, copiés depuis design/tokens.css au
+ * build. Le fichier de référence reste `design/tokens.css` : c'est lui que
+ * lit `scripts/check_contrast.py`, et c'est lui qu'on modifie. */
+@import '../styles/tokens.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    background: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-ui);
+    font-size: var(--text-body);
+    line-height: var(--leading-body);
+    /* Assumé : la démo est desktop (min-width 1440 dans les 10 maquettes).
+     * Le responsive est un chantier de production, pas un bricolage. */
+    min-width: var(--viewport-min-width);
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    line-height: var(--leading-title);
+  }
+
+  ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-border);
+    border-radius: 3px;
+  }
+}
