@@ -57,11 +57,7 @@ jobs:
         run: npm run build
 
       - name: Garde anti-fuite — aucun secret dans le site publié
-        run: |
-          if grep -rIl -e "service_role" -e "sb_secret_" -e "SUPABASE_SERVICE" out/; then
-            echo "Un secret Supabase apparaît dans le build : publication refusée." >&2
-            exit 1
-          fi
+        run: node scripts/verifier-secrets.mjs out
 
       - uses: actions/upload-pages-artifact@v3
         with:

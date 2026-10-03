@@ -4,24 +4,21 @@
   "private": true,
   "scripts": {
     "dev": "next dev -p 3001",
-    "build": "next build",
-    "lint": "next lint",
+    "build": "next build && node scripts/corriger-export.mjs out",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@supabase/supabase-js": "^2.45.0",
-    "next": "^14.2.15",
-    "react": "18.3.1",
-    "react-dom": "18.3.1"
+    "@supabase/supabase-js": "^2.117.2",
+    "next": "^16.3.8",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
   },
   "devDependencies": {
-    "@types/node": "20.14.10",
-    "@types/react": "18.3.3",
-    "@types/react-dom": "18.3.0",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
     "autoprefixer": "10.4.20",
-    "eslint": "8.57.0",
-    "eslint-config-next": "^14.2.15",
-    "postcss": "8.4.47",
+    "postcss": "^8.5.28",
     "tailwindcss": "3.4.13",
     "typescript": "5.5.4"
   }
