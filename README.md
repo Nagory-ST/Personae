@@ -39,7 +39,20 @@ NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY=sb_publishable_... \
 npm run dev
 ```
 
+## Donner accès à une personne réelle
+
+L'inscription est fermée. Créer le compte dans Supabase → Authentication → Users, puis dans le SQL
+Editor :
+
+```sql
+insert into personae.compte_invite (id, pseudo, display_name)
+select id, 'Pseudo', 'Pseudo' from auth.users where email = 'adresse@exemple.fr';
+select personae.reinitialiser();  -- ou attendre 03:00 UTC
+```
+
+Retirer l'accès : supprimer le compte dans Authentication → Users (cascade).
+
 ## Remise à zéro
 
-Le contenu écrit par les visiteurs est effacé chaque nuit à 03:00 UTC (`personae.charger_jeu()`
-via pg_cron). Manuellement : `select personae.charger_jeu();` dans le SQL Editor.
+Le contenu écrit par les visiteurs est effacé chaque nuit à 03:00 UTC (`personae.reinitialiser()`
+via pg_cron) ; les comptes fictifs et invités gardent leur accès. Manuellement : `select personae.reinitialiser();`.

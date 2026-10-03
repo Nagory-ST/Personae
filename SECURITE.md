@@ -69,6 +69,8 @@ comptes (checklist §5).
 | E | FAIBLE | Abus de lecture (scraping, charge) | Données publiques et fictives ; limites de l'offre gratuite Supabase. Aucun rate-limit applicatif sur les RPC |
 | F | FAIBLE | Google Fonts : l'IP du visiteur part chez Google (RGPD, cf. jurisprudence allemande 2022) | Dette L9 existante : héberger les polices localement |
 | G | FAIBLE | Projet Supabase gratuit mis en pause après 7 jours d'inactivité → démo hors service | Le relancer avant chaque présentation |
+| I | MOYENNE | **Compte réel** : une personne réelle (compte invité, pseudo « Victor ») a accès à la démo depuis le 03/10. Son e-mail est dans `auth.users` ; seul le pseudo est dans `personae`. Ses avis sont publics et effacés chaque nuit | Accès sur demande de Kévin, tracé dans `personae.compte_invite`. Retrait : supprimer le compte Auth (cascade sur l'invitation et le profil) |
+| J | FAIBLE | Advisor `auth_leaked_password_protection` : pas de contrôle HaveIBeenPwned sur les mots de passe | Pertinent depuis l'arrivée d'un compte réel. Option disponible selon l'offre Supabase (Authentication → Policies) — à activer si l'offre le permet |
 | H | INFO | Clé publiable et URL Supabase visibles dans le dépôt et le JS | **Public par conception.** Le workflow refuse de publier si une clé `service_role` / `sb_secret_` apparaît dans le build |
 
 ## 5. Checklist avant de partager le lien
